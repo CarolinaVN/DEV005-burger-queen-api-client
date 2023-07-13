@@ -1,3 +1,7 @@
+import React from 'react'
+import ApiAdminUser  from '../../Utilities/ApiAdminUser';
+import Header from "../../components/Header";
+import TopBarAdmin from '../../components/topBarAdmin';
 import { useState } from 'react';
 
 const AdminEmployees = ({ products, type }) => {
@@ -45,6 +49,14 @@ const AdminEmployees = ({ products, type }) => {
 
   return (
     <>
+
+     adminEmployees
+     <Header />
+     <TopBarAdmin/>
+    <ApiAdminUser/>
+    </>
+  )
+}
       {type === 'desayunoEdit' && (
         <tbody>
           {renderTableRows(editableProducts)}

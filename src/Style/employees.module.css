@@ -1,0 +1,16 @@
+.tableHeader th {
+  background: #060303;
+  width: 30vw;
+}
+.tableUser {
+  background: #d9d9d9;
+  padding-bottom: 2vh;
+  width: 30vw;
+}
+.tableContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: center;
+  justify-content: center;
+}
