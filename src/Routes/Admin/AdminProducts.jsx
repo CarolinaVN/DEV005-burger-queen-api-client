@@ -5,6 +5,8 @@ import Modal from 'react-modal';
 import { nanoid } from 'nanoid';
 import ReadOnlyRow from '../../components/ReadOnlyRow';
 import EditableRow from '../../components/EditableRow';
+import Header from "../../components/Header";
+import TopBarAdmin from '../../components/topBarAdmin';
 
 const AdminProducts = () => {
   const [products, setProducts] = useState([]);
@@ -156,6 +158,9 @@ const AdminProducts = () => {
   }, []);
 
   return (
+    <>
+    <Header />
+    <TopBarAdmin/>
     <div className='adminContainer'>
       <form onSubmit={handleEditFormSubmit}>
         <table>
@@ -209,6 +214,7 @@ const AdminProducts = () => {
         <button type='submit'>ADD</button>
       </form>
     </div>
+    </>
   );
 };
 

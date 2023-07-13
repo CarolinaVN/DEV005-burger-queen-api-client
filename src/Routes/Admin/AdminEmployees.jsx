@@ -2,9 +2,20 @@ import React from 'react'
 import ApiAdminUser  from '../../Utilities/ApiAdminUser';
 import Header from "../../components/Header";
 import TopBarAdmin from '../../components/topBarAdmin';
-import { useState } from 'react';
 
-const AdminEmployees = ({ products, type }) => {
+
+export const AdminEmployees = () => {
+  return (
+    <>
+    <Header />
+    <TopBarAdmin/>
+   <ApiAdminUser/>
+   </>
+  )
+}
+export default AdminEmployees; 
+
+/* const AdminEmployees = ({ products, type }) => {
   const [editableProducts, setEditableProducts] = useState(products);
 
   const handleEdit = (productId, fieldName, newValue) => {
@@ -47,16 +58,9 @@ const AdminEmployees = ({ products, type }) => {
     ));
   };
 
+
   return (
     <>
-
-     adminEmployees
-     <Header />
-     <TopBarAdmin/>
-    <ApiAdminUser/>
-    </>
-  )
-}
       {type === 'desayunoEdit' && (
         <tbody>
           {renderTableRows(editableProducts)}
@@ -74,5 +78,11 @@ const AdminEmployees = ({ products, type }) => {
     </>
   );
 };
+  {/* <>
 
-export default AdminEmployees;
+     adminEmployees
+     <Header />
+     <TopBarAdmin/>
+    <ApiAdminUser/>
+    </> */
+
