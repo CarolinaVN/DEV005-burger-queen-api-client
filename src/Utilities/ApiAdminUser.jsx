@@ -12,8 +12,7 @@ const ApiAdminUser = () => {
   const getData = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:8080/users", {
-        headers: {
+      const response = await axios.get("http://localhost:8080/users", {headers: {
           "Content-Type": "application/json",
           Authorization: "Bearer " + token,
         },
@@ -29,7 +28,7 @@ const ApiAdminUser = () => {
 
   return (
     <div>
-      <EmployeesTable users={users} />
+       <EmployeesTable users={users} />
     </div>
   );
 };

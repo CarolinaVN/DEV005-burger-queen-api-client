@@ -47,13 +47,15 @@ const AdminEmployees = ({ products, type }) => {
     ));
   };
 
+export const AdminEmployees = () => {
   return (
     <>
 
      adminEmployees
      <Header />
      <TopBarAdmin/>
-    <ApiAdminUser/>
+     <ApiAdminUser refresh={refresh} />
+      <CreateUserTable onUserCreated={handleUserCreated} />
     </>
   )
 }
