@@ -1,11 +1,18 @@
+<<<<<<< HEAD
  const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
+=======
+import React from 'react'
+import ProductCSS from "../Style/adminProducts.module.css";
+
+const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
+>>>>>>> 73d30fee381111a00db94ab033de9fbc2bede090
     return (
         <tr>
             <td>
                 <input
                     type='text'
                     required='required'
-                    placeholder='Enter a name...'
+                    placeholder='Ingresa un nombre...'
                     name='name'
                     value={editFormData.name}
                     onChange={handleEditFormChange}
@@ -15,15 +22,15 @@
                 <input
                     type='number'
                     required='required'
-                    placeholder='Enter a price...'
+                    placeholder='Ingresa un precio...'
                     name='price'
                     value={editFormData.price}
                     onChange={handleEditFormChange}
                 ></input>
             </td>
             <td>
-                <button type='submit'>Save</button>
-                <button type='button' onClick={handleCancelClick}>Cancel</button>
+                <button type='submit' className={ProductCSS.btnSave}>Guardar</button>
+                <button type='button' onClick={handleCancelClick} className={ProductCSS.btnCancel}>Cancelar</button>
             </td>
         </tr>
     )
