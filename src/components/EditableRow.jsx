@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductCSS from "../Style/adminProducts.module.css";
 
 const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
     return (
@@ -7,7 +8,7 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) 
                 <input
                     type='text'
                     required='required'
-                    placeholder='Enter a name...'
+                    placeholder='Ingresa un nombre...'
                     name='name'
                     value={editFormData.name}
                     onChange={handleEditFormChange}
@@ -17,15 +18,15 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) 
                 <input
                     type='number'
                     required='required'
-                    placeholder='Enter a price...'
+                    placeholder='Ingresa un precio...'
                     name='price'
                     value={editFormData.price}
                     onChange={handleEditFormChange}
                 ></input>
             </td>
             <td>
-                <button type='submit'>Save</button>
-                <button type='button' onClick={handleCancelClick}>Cancel</button>
+                <button type='submit' className={ProductCSS.btnSave}>Guardar</button>
+                <button type='button' onClick={handleCancelClick} className={ProductCSS.btnCancel}>Cancelar</button>
             </td>
         </tr>
     )

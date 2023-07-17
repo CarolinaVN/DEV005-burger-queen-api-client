@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductCSS from "../Style/adminProducts.module.css";
 
 const ReadOnlyRow = ({ product, handleEditClick, handleDeleteClick }) => {
     return (
@@ -8,10 +9,9 @@ const ReadOnlyRow = ({ product, handleEditClick, handleDeleteClick }) => {
             <td>
                 <button
                     type='button'
-                    onClick={(event) => handleEditClick(event, product)}>
-                    Edit
-                </button>
-                <button type='button' onClick={()=> handleDeleteClick(product.id)}>Delete</button>
+                    onClick={(event) => handleEditClick(event, product)}
+                    className={ProductCSS.btnEdit}></button>
+                <button type='button' onClick={()=> handleDeleteClick(product.id)} className={ProductCSS.btnDelete}></button>
             </td>
         </tr>
     )
