@@ -1,11 +1,7 @@
-<<<<<<< HEAD
- const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
-=======
 import React from 'react'
 import ProductCSS from "../Style/adminProducts.module.css";
 
 const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }) => {
->>>>>>> 73d30fee381111a00db94ab033de9fbc2bede090
     return (
         <tr>
             <td>

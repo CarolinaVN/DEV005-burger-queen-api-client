@@ -4,14 +4,9 @@ import Modal from 'react-modal';
 import { nanoid } from 'nanoid';
 import ReadOnlyRow from '../../components/ReadOnlyRow';
 import EditableRow from '../../components/EditableRow';
-<<<<<<< HEAD
-import Header from "../../components/Header";
-import TopBarAdmin from '../../components/topBarAdmin';
-=======
 import ProductCSS from "../../Style/adminProducts.module.css";
 
 const dropdown = document.getElementById('dropdown')
->>>>>>> 73d30fee381111a00db94ab033de9fbc2bede090
 
 const AdminProducts = () => {
   const [products, setProducts] = useState([]);
@@ -171,42 +166,6 @@ const AdminProducts = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <>
-    <Header />
-    <TopBarAdmin/>
-    <div className='adminContainer'>
-      <form onSubmit={handleEditFormSubmit}>
-        <table>
-          <thead>
-            <tr>
-              <th>Product</th>
-              <th>Price</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {products.map((product) => (
-              <Fragment key={product.id}>
-                {editProductId === product.id ? (
-                  <EditableRow
-                    editFormData={editFormData}
-                    handleEditFormChange={handleEditFormChange}
-                    handleCancelClick={handleCancelClick}
-                  />
-                ) : (
-                  <ReadOnlyRow
-                    product={product}
-                    handleEditClick={handleEditClick}
-                    handleDeleteClick={handleDeleteClick}
-                  />
-                )}
-              </Fragment>
-            ))}
-          </tbody>
-        </table>
-      </form>
-=======
     <div className={ProductCSS.adminProdContainer}>
       <div className={ProductCSS.addProdContainer}>
         <h3 className={ProductCSS.title} >Añade un producto</h3>
@@ -220,7 +179,6 @@ const AdminProducts = () => {
               value={addFormData.name}
               onChange={handleAddFormChange}
             />
->>>>>>> 73d30fee381111a00db94ab033de9fbc2bede090
 
             <input
               type='number'
@@ -233,8 +191,8 @@ const AdminProducts = () => {
 
             <select name='type' onChange={handleAddFormChange} required defaultValue='' ref={dropdownRef}>
               <option value=''>Selecciona el tipo</option>
-              <option value='desayuno'>Desayuno</option>
-              <option value='almuerzo'>Almuerzo</option>
+              <option value='Desayuno'>Desayuno</option>
+              <option value='Almuerzo'>Almuerzo</option>
             </select>
 
             <button type='submit' className={ProductCSS.btnAdd}>Añadir</button>
@@ -256,7 +214,7 @@ const AdminProducts = () => {
             <caption>Desayuno</caption>
             <tbody>
               {products
-                .filter((product) => product.type === 'desayuno')
+                .filter((product) => product.type === 'Desayuno')
                 .map((product) => (
                   <Fragment key={product.id}>
                     {editProductId === product.id ? (
@@ -290,7 +248,7 @@ const AdminProducts = () => {
             <caption>Almuerzo</caption>
             <tbody>
               {products
-                .filter((product) => product.type === "almuerzo")
+                .filter((product) => product.type === "Almuerzo")
                 .map((product) => (
                   <Fragment key={product.id}>
                     {editProductId === product.id ? (
@@ -313,7 +271,7 @@ const AdminProducts = () => {
         </form>
       </div>
     </div>
-    </>
+
   );
 };
 

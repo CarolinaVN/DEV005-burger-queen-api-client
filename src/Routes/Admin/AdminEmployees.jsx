@@ -26,7 +26,6 @@ const AdminEmployees = () => {
 
   return (
     <>
-      adminEmployees
       <Header />
       <TopBarAdmin />
       <ApiAdminUser />
