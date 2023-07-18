@@ -1,10 +1,12 @@
 import React, { useState, useEffect, Fragment, useRef } from 'react';
 import axios from 'axios';
-import Modal from 'react-modal';
-import { nanoid } from 'nanoid';
+/* import Modal from 'react-modal';
+import { nanoid } from 'nanoid'; */
 import ReadOnlyRow from '../../components/ReadOnlyRow';
 import EditableRow from '../../components/EditableRow';
 import ProductCSS from "../../Style/adminProducts.module.css";
+import Header from "../../components/Header";
+import TopBarAdmin from "../../components/topBarAdmin";
 
 const dropdown = document.getElementById('dropdown')
 
@@ -166,6 +168,9 @@ const AdminProducts = () => {
   }, []);
 
   return (
+    <>
+    <Header />
+      <TopBarAdmin />
     <div className={ProductCSS.adminProdContainer}>
       <div className={ProductCSS.addProdContainer}>
         <h3 className={ProductCSS.title} >Añade un producto</h3>
@@ -271,7 +276,7 @@ const AdminProducts = () => {
         </form>
       </div>
     </div>
-
+    </>
   );
 };
 

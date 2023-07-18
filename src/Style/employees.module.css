@@ -14,3 +14,53 @@
   align-content: center;
   justify-content: center;
 }
+
+.btnUser {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border: transparent;
+}
+.btnFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnKeep{
+  color: white;
+  background-color: #5cb46c;
+  border-radius: 5em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.btnCancel{
+  color: white;
+  background-color: #B54A5D;
+  border-radius: 5em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.btnAdd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: white;
+  background-color: #5cb46c;
+  border-radius: 5em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}

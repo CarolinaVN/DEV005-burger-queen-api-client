@@ -1,4 +1,5 @@
 import axios from "axios";
+import EmployeesCSS from "../Style/employees.module.css";
 
 const DeleteButton = ({ userId, onClick }) => {
   const handleDelete = async () => {
@@ -17,7 +18,7 @@ const DeleteButton = ({ userId, onClick }) => {
     }
   };
 
-  return <button onClick={handleDelete}>Eliminar</button>;
+  return <button className={EmployeesCSS.btnUser} onClick={handleDelete}>❌</button>;
 };
 
 export default DeleteButton;

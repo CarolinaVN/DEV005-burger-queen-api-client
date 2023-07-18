@@ -102,7 +102,7 @@ const CreateUserTable = () => {
         </tr>
         <tr>
           <td colSpan="2">
-            <button onClick={handleCreateUser}>incorporar</button>
+            <button className={EmployeesCSS.btnAdd} onClick={handleCreateUser}>Incorporar 📥</button>
           </td>
         </tr>
       </tbody>

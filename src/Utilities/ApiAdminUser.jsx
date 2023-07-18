@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import EmployeesTable from "../components/EmployeesTable";
+import EmployeesTable from "../components/employeesTable";
 
 const ApiAdminUser = () => {
   const [users, setUsers] = useState([]);
@@ -12,7 +12,8 @@ const ApiAdminUser = () => {
   const getData = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:8080/users", {headers: {
+      const response = await axios.get("http://localhost:8080/users", {
+        headers: {
           "Content-Type": "application/json",
           Authorization: "Bearer " + token,
         },
@@ -28,7 +29,7 @@ const ApiAdminUser = () => {
 
   return (
     <div>
-       <EmployeesTable users={users} />
+      <EmployeesTable users={users} onDeleteUser={() => {}} onEditUser={() => {}} />
     </div>
   );
 };

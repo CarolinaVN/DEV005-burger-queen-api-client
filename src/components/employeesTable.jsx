@@ -1,9 +1,13 @@
 import EmployeesCSS from "../Style/employees.module.css";
 import DeleteButton from "../components/DeleteButton";
+import EditButton from "../components/editButtonEmployes";
 
-const EmployeeTable = ({ user, onDelete }) => {
+const EmployeeTable = ({ user, onDelete, onEdit }) => {
   const handleDelete = () => {
     onDelete(user.id);
+  };
+  const handleEdit = () => {
+    onEdit(user.id);
   };
 
   return (
@@ -11,7 +15,7 @@ const EmployeeTable = ({ user, onDelete }) => {
       <table>
         <thead className={EmployeesCSS.tableHeader}>
           <tr>
-            <th colSpan="3">Nombre: {user.name}</th>
+            <th colSpan="3">{user.username}</th>
           </tr>
         </thead>
         <tbody>
@@ -22,11 +26,9 @@ const EmployeeTable = ({ user, onDelete }) => {
             <td>Role: {user.role}</td>
           </tr>
           <tr>
-            <td>ID: {user.id}</td>
-          </tr>
-          <tr>
-            <td>
+            <td className={EmployeesCSS.btnFlex}>
               <DeleteButton userId={user.id} onClick={handleDelete} />
+              <EditButton userId={user.id} onClick={handleEdit} />
             </td>
           </tr>
         </tbody>
@@ -39,6 +41,9 @@ const EmployeesTable = ({ users, onDeleteUser }) => {
   const handleDeleteUser = (userId) => {
     onDeleteUser(userId);
   };
+  const handleEditUser = (userId) => {
+    console.log(`Edit user with ID ${userId}`);
+  };
 
   return (
     <div className={EmployeesCSS.tableContainer}>
@@ -47,6 +52,7 @@ const EmployeesTable = ({ users, onDeleteUser }) => {
           key={user.id}
           user={user}
           onDelete={handleDeleteUser}
+          onEdit={handleEditUser}
         />
       ))}
     </div>
