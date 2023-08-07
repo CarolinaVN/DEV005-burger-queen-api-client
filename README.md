@@ -35,4 +35,4 @@ El prototipo fue diseñado usando Figma y puedes verlo aquí: [prototipo-burger-
 
 ## 4. Sobre nosotras
 
-Este proyecto fue realizado por [Carolina Vera](https://github.com/CarolinaVN) y [Teresa Barrios](https://github.com/T-Barrios)
+Este proyecto fue desarrollado por las front-end devs [Carolina Vera](https://github.com/CarolinaVN) y [Teresa Barrios](https://github.com/T-Barrios)
