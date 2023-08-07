@@ -15,19 +15,16 @@ En esta web App las funciones del mesero como tomar pedidos y enviarlos a cocina
 
 La página fue desplegada usando Vercel y puedes visitarla aquí: [Burger Queen Desplegada](https://dev-005-burger-queen-api-client.vercel.app/)
 
-<video controls width="400">
-  <source src="
-https://github.com/T-Barrios/DEV005-burger-queen-api-client/assets/124935961/5890cde1-695a-4db7-8d61-4fb9fdbac232" type="video/mp4">
-  Tu navegador no admite el elemento video.
-</video>
 
 
-https://github.com/T-Barrios/DEV005-burger-queen-api-client/assets/124935961/311376a4-a802-4313-9771-b5e0f562833b
+![demo-waiterchef](https://github.com/T-Barrios/DEV005-burger-queen-api-client/assets/124935961/f2e922eb-8216-465b-ba74-51170fe3b35e)
+![demo-admin](https://github.com/T-Barrios/DEV005-burger-queen-api-client/assets/124935961/36a8bf6d-485a-4994-985c-636ca6eb785f)
 
 
 ## 2. Prototipo de alta fidelidad
 
 El prototipo fue diseñado usando Figma y puedes verlo aquí: [prototipo-burger-queen.pdf](https://github.com/T-Barrios/DEV005-burger-queen-api-client/files/12285403/prototipo-burger-queen.pdf)
+
 
 
 ## 3. Sobre nosotras
