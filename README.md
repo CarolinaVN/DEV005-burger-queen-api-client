@@ -2,8 +2,8 @@
 
 ## Índice
 
-* [1. Sobre el proyecto](#1-preámbulo)
-* [2. Prototipo de alta fidelidad en figma](#2-prototipo-de-alta-fidelidad-en-figma)
+* [1. Sobre el proyecto](#1-sobre-el-proyecto)
+* [2. Prototipo de alta fidelidad](#2-prototipo-de-alta-fidelidad)
 * [3. Sobre nosotras](#3-sobre-nosotras)
 
 
@@ -13,11 +13,17 @@ Este proyecto tiene como propósito optimizar y enlazar los procesos que se vive
 
 En esta web App las funciones del mesero como tomar pedidos y enviarlos a cocina se mandan de forma automática por la integración de una API. Asi mismo, cuando el pedido ya está listo para ser servido, desde cocina se actualiza el estado, informando al mesero que ha llegado el momento de servir el pedido al cliente. Además, esto va sincronizado con tareas básicas de un administrador: gestionar la lista de empleados del restaurant, asi como gestionar la lista de productos que se sirven en el restaurant. Esto quiere decir, que para ambas se encuentra la opción de añadir, editar y eliminar.
 
-https://github.com/T-Barrios/DEV005-burger-queen-api-client/assets/124935961/5890cde1-695a-4db7-8d61-4fb9fdbac232
+La página fue desplegada usando Vercel y puedes visitarla aquí: [Burger Queen Desplegada](https://dev-005-burger-queen-api-client.vercel.app/)
+
+<video controls width="400">
+  <source src="
+https://github.com/T-Barrios/DEV005-burger-queen-api-client/assets/124935961/5890cde1-695a-4db7-8d61-4fb9fdbac232" type="video/mp4">
+  Tu navegador no admite el elemento video.
+</video>
+
 
 https://github.com/T-Barrios/DEV005-burger-queen-api-client/assets/124935961/311376a4-a802-4313-9771-b5e0f562833b
 
-La página fue desplegada usando Vercel y puedes visitarla aquí: [Burger Queen Desplegada](https://dev-005-burger-queen-api-client.vercel.app/)
 
 ## 2. Prototipo de alta fidelidad
 
